@@ -1,0 +1,58 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.header {
+  background-color: black;
+  height: 5vmax;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: xx-large;
+}
+@media (max-width: 768px) {
+  .header {
+    font-size: larger;
+  }
+
+  p {
+    font-size: medium;
+  }
+}
+p {
+  margin-top: 10px;
+  font-family: "Press Start 2P", cursive;
+}
+body {
+  background-color: aqua;
+}
+.container {
+  place-items: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-field {
+  margin-bottom: 10px;
+  margin-right: 0px;
+  height: 50px;
+  width: 220px;
+  border-radius: 12px;
+}
+input[type="text"]::placeholder {
+  text-align: center;
+}
+input[type="text"] {
+  text-align: center;
+}
+#password {
+  width: 70%;
+}
+button {
+  margin: 30px;
+  height: 50px;
+  width: 120px;
+  border-radius: 12px;
+}
