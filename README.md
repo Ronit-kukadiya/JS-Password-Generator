@@ -1,2 +1,2 @@
 # JS-Password-Generator
-random password generation using javascript
+in this mini-project i have created randomised password generator using javascript
