@@ -42,9 +42,10 @@ function generateEasy() {
     .join("");
   gene_pass.value =
     first + randomizedString + Math.floor(Math.random() * 10000);
-  if (gene_pass.value.length < 8 || gene_pass.value.length > 30) {
+  if (gene_pass.value.length < 8 || gene_pass.value.length > 30 || gene_pass.value === "") {
     console.log("Invalid password length");
-    alert("Password length should be between 8 and 30 characters.");
+    alert("Unable to generate Password!!");
+    password.value = "";
   } else {
     password.innerText = gene_pass.value;
   }
@@ -93,9 +94,10 @@ function generateModerate() {
     randomSpecialChars +
     randomNumbers;
 
-  if (gene_pass.value.length < 8 || gene_pass.value.length > 30) {
+  if (gene_pass.value.length < 10 || gene_pass.value.length > 30 || gene_pass.value === "") {
     console.log("Invalid password length");
-    alert("Password length should be between 8 and 30 characters.");
+    alert("Unable to generate Password!!");
+    password.value = "";
   } else {
     password.innerText = gene_pass.value;
   }
@@ -137,9 +139,10 @@ function generateHard() {
 
   gene_pass.value = randomPassword + Math.floor(Math.random() * 10000);
 
-  if (gene_pass.value.length < 8 || gene_pass.value.length > 30) {
+  if (gene_pass.value.length < 8 || gene_pass.value.length > 30 || gene_pass.value === "") {
     console.log("Invalid password length");
-    alert("Password length should be between 8 and 30 characters.");
+    alert("Unable to generate Password!!");
+    password.value = "";
   } else {
     console.log("Generated hard password: ", gene_pass.value);
     password.innerText = gene_pass.value;
