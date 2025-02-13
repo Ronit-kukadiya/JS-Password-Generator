@@ -4,7 +4,7 @@
 }
 .header {
   background-color: black;
-  height: 5vmax;
+  height: 7vmax;
   color: white;
   display: flex;
   align-items: center;
@@ -13,7 +13,8 @@
 }
 @media (max-width: 768px) {
   .header {
-    font-size: larger;
+    font-size: xx-large;
+    height: 9vh;
   }
 
   p {
